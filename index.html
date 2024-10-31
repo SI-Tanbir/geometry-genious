@@ -14,7 +14,7 @@
 
     <section class="geometry-container flex flex-col md:flex-row">
 
-        <div class="geometry flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+        <div class="geometry flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
 
             <div class="card card-compaact  w-96 shadow-xl">
                 <figure>
@@ -39,20 +39,35 @@
                 </div>
               </div>
 
-              <div class="card card-compact bg-base-100 w-96 shadow-xl">
+
+              <div class="card card-compaact  w-96 shadow-xl">
                 <figure>
                   <img
-                    src="./images/parallelogram.png"
-                    alt="Shoes" />
+                    src="./images/rectangle.png"
+                    alt="triangle" />
                 </figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                <div class="card-body text-center">
+                  <h2 class="text-center text-2xl font-black">Rectangle</h2>
+                  <p>Area (A) = W x I</p>
+                  <div>
+                    <input id="ractangle-w" class="w-10 bg-slate-200 placeholder-black placeholder:font-bold" type="text" placeholder="W"> 
+                    <span>cm</span>
+
+                    <input id="ractangle-i" class="w-10 bg-slate-200 placeholder-black placeholder:font-bold" type="text" placeholder="I"> 
+                    <span>cm</span>
+
+                  </div>
+                  <div class="card-actions  justify-center">
+                    <button id="ractangle-btn" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
+
+
+
+
+
+             
 
               <div class="card card-compact bg-base-100 w-96 shadow-xl">
                 <figure>
@@ -132,33 +147,7 @@
 
 
     <script>
-//  console.log("connected") connection successfull
-document.getElementById("triangle-btn").addEventListener('click',function(){
 
-    // id="triangle-b"
-    let inputB= document.getElementById('triangle-b').value;
-
-    let inputH= document.getElementById('triangle-h').value;
-    let areaCalculation=0.5 * inputB * inputH;
-
-    // console.log(calTriangle);
-    
-
-    let resultarea=document.getElementById('areaCalculation');
-    let p= document.createElement('p');
-    p.innerText="Area (A) = 0.5 x" + inputB +"x"+inputH+"="+areaCalculation;
-    resultarea.appendChild(p);
-
-
-
-    
-
-
-
-
-    // console.log("hello") 
-
-}) 
 
 
 
